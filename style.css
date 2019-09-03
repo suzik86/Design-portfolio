@@ -14,28 +14,6 @@ body {
     position: relative;
 }
 
-.header::before {
-    content: "";
-    position: absolute;
-    background:#e4e9eb;
-    display: block;
-    width: 410px;
-    height: 1px;
-    top:74px;
-    left: 580px;
-}
-
-.header::after {
-    content: "";
-    position: absolute;
-    background:#e4e9eb;
-    display: block;
-    width: 410px;
-    height: 1px;
-    top:74px;
-    left: 29px;
-}
-
 .navigation  {
     display: flex;
     align-items: center;
