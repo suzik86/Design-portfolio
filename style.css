@@ -1,0 +1,494 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;    
+}
+
+.header {
+    width: 100%;
+    background-color: #323232;
+    height: 63px;
+    position: relative;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    background:#e4e9eb;
+    display: block;
+    width: 410px;
+    height: 1px;
+    top:74px;
+    left: 580px;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    background:#e4e9eb;
+    display: block;
+    width: 410px;
+    height: 1px;
+    top:74px;
+    left: 29px;
+}
+
+.navigation  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation .nav-block {
+    padding-top: 26px;
+    width: 50%;
+}
+
+.navigation .nav-block.nav-block-left {
+    text-align: right;
+}
+
+.navigation .nav-block.nav-block-right {
+    text-align: left;
+}
+
+.navigation::after {
+    content: "";
+    position: absolute;
+    top: 63px;
+    width: 0;
+	height: 0;
+	border-left: 46px solid transparent;
+	border-right: 46px solid transparent;
+	border-top: 26px solid #323232;
+}
+
+.navigation .nav-block .menu {
+    padding: 0 70px;
+}
+
+.menu .item {   
+    list-style: none;
+    display: inline-block;
+}
+
+.navigation .nav-block.nav-block-left .menu .item {
+    padding-left: 22px;
+}
+
+.navigation .nav-block.nav-block-right .menu .item {
+    padding-right: 22px;
+}
+
+.menu .item a {   
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 7.21379pt;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+}
+
+.menu .item a:hover {
+    color: #2eac93;
+}
+
+.navigation .logo {
+    width: 64px;
+    height: 55px;  
+    position: absolute;
+    top: 10px;
+}
+
+.hexagon-container {
+    margin-top: 83px;
+}
+
+.svg-defs {
+    position: absolute;    
+}
+
+.hexagon {
+    display: inline-block;
+    margin: 6px 8px;
+    position: relative;
+    width: 180px;
+    height: 206px;
+}
+
+.hexagon image {
+    clip-path: url(#clipping);
+}
+
+.page .hex1 {
+    margin-left: 109px;    
+}
+
+.hexagin-border {
+    position: absolute;
+    background: #e4e9eb;
+    display: block;
+    width: 1px;
+    height: 104px;
+}
+
+.hexagin-border.left {
+    left: 88px;
+}
+
+.hexagin-border.top {
+    top:58px
+}
+
+.hexagin-border.bottom {
+    bottom:60px
+}
+
+.hexagin-border.right {
+    right:90px
+}
+
+.hex5 {
+    margin-left: 9px;
+}
+
+.row2 {
+    margin-top: -48px;    
+}
+
+input[name="pages"] {
+    display:none;
+}
+
+
+.slider-pages {
+    border-bottom: 1px solid #e4e9eb;
+    padding: 0px 11px 7px 0;
+    width: 50px;
+    margin: 0 auto;
+}
+
+.slider-pages label {
+    display:inline-block;
+    cursor:pointer;
+    background: #ddd2c5;    
+    width: 6px;
+    height: 6px;
+    margin-top: 32px;
+    margin-right: -1px;
+}
+
+#page-1:checked ~ .slider-pages .p1,
+#page-2:checked ~ .slider-pages .p2,
+#page-3:checked ~ .slider-pages .p3,
+#page-4:checked ~ .slider-pages .p4,
+#page-5:checked ~ .slider-pages .p5,
+#page-6:checked ~ .slider-pages .p6 {
+    background: #8b8784;
+}
+
+#page-1:checked ~ .slider-wrapper .viewport { 
+    transition: all 700ms;
+    margin-left:0;
+}
+
+#page-2:checked ~ .slider-wrapper .viewport {
+    transition: all 700ms;
+    margin-left:-1004px;
+}
+
+#page-3:checked ~ .slider-wrapper .viewport {
+    transition: all 700ms;
+    margin-left:-2008px;
+}
+
+#page-4:checked ~ .slider-wrapper .viewport {
+    transition: all 700ms;
+    margin-left:-3012px;
+}
+
+#page-5:checked ~ .slider-wrapper .viewport {
+    transition: all 700ms;
+    margin-left:-4016px;
+}
+
+#page-6:checked ~ .slider-wrapper .viewport {
+    transition: all 700ms;
+    margin-left:-5020px;
+}
+
+.hexagon-container .slider-wrapper {
+    width: 998px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.hexagon-container .slider-wrapper .viewport {
+    width: 6020px;
+}
+
+.main .page {
+    display: inline-block;
+    position: relative;
+    width: 1000px;
+}
+
+.main .info {
+    background-color:#2eb398;
+    padding: 13px 99px 14px 99px;
+}
+
+.info .article {
+    border-left: 1px solid #219d84;
+    border-right: 1px solid #219d84;
+    height: 258px;
+    padding-top: 56px;
+    max-width: 1020px;
+    margin: 0 auto;
+    
+}
+
+.info .article .photo {
+    margin-left: 20px;
+    float: left;
+    width: 180px;
+}
+
+.info .article .photo image {
+    clip-path: url(#clipping);
+}
+
+.article .text {
+    margin-left: 220px;
+    margin-top: -9px;
+}
+
+.info .article .text h1 {
+    font-family: 'Maven Pro', sans-serif;    
+    color: rgb(215, 252, 245);
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: -0.3px;
+    margin-left: -1px;
+
+}
+
+.info .article .subtitle {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 18px;
+    color: rgb(32, 129, 109);
+    text-align: justify;
+    letter-spacing: -0.18px;
+}
+
+.info .article .desc {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    color: rgb(215, 252, 245);
+    text-align: justify;
+    padding-top: 13px;
+    line-height: 175%;    
+    margin-right: 19px;
+}
+
+.social-icons {
+    margin-left: 433px;
+    margin-top: 37px;
+    font-family: "fontello";
+}
+
+.info .social-icons .social {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    color:#04ac95;
+    line-height:25px;
+    text-align: center;
+    background-color: #6ccbbe;
+    font-size: 16px;
+    margin-right: -3px;
+    text-decoration: none;
+}
+
+.info .social-icons .social:hover {
+background-color: #a5dbd4;
+}
+
+footer {
+    background-color: #323232;
+}
+
+footer .in-touch-form::before,
+footer .in-touch-form::after
+{
+    background-color: #2b2b2b;
+    height: 1px;
+    content: "";
+    position: absolute;    
+    display: block;
+    height: 1px;
+    top: 14px;
+    left: 29px;
+    right: 29px;
+}
+
+footer .in-touch-form::after {
+    top:auto;
+    bottom: 10px;
+}
+
+footer .in-touch-form {
+    position: relative;
+    height: 490px;
+    padding-left: 121px;
+    padding-top: 73px;
+}
+
+footer .in-touch-form div {
+    display: inline-block;
+}
+
+footer .in-touch-form {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+footer .in-touch-form .form-fields {
+    width: 576px;
+    margin-top: -15px;
+}
+
+footer .in-touch-form .form-fields fieldset {
+    border: none;
+    margin-top: 20px;
+}
+
+.in-touch-form .form-fields h2 {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 30px;
+    color: rgb(224, 224, 224);
+    text-align: justify;
+    font-weight: normal;
+}
+
+.in-touch-form .form-fields p {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 18px;
+    color: rgb(190, 190, 190);
+    text-align: justify;
+}
+
+
+footer .in-touch-form .form-fields input,
+footer .in-touch-form .form-fields textarea {
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    display: block;
+    width: 551px;
+    margin-bottom: 16px;
+    padding: 11px 14px 12px;
+    background-color: #454545;
+    border: 0 none;
+}
+
+footer .in-touch-form .form-fields textarea {
+    padding: 11px 13px 11px;
+    height: 128px;
+    width: 553px;
+    margin-bottom: 6px;
+}
+
+footer .in-touch-form .button {
+    display: block;   
+    color:white;
+    border: none;    
+    background: #2eb398;
+    font-size: 1em;
+    line-height: 2em;
+    width: 90px;
+    height: 37px;
+    margin-left: 489px;
+    margin-top: 10px;
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: -0.6px;
+}
+
+.in-touch-form .form-info {
+    width: 180px;
+    margin-left: 20px;
+    vertical-align: top;
+    margin-top: 55px;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+}
+
+.in-touch-form .form-info p {
+    color: rgb(224, 224, 224);
+    text-align: justify;
+    height: 117px;
+    line-height: 22px;
+}
+
+.in-touch-form .form-info p span {
+    font-weight: 900;
+    word-spacing: 2px;
+}
+
+.in-touch-form .form-info .contacts {
+    margin-top: 45px;
+    list-style: none;
+}
+
+.in-touch-form .form-info .contacts li {
+    line-height: 21px;
+}
+
+.in-touch-form .form-info .contacts li a::before {
+    content: "";
+    width: 13px;
+    height: 11px;
+    display: inline-block;
+    background: url(assets/images/contacts.png) no-repeat 0 0;
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+    left: -2px;
+}
+
+.in-touch-form .form-info .contacts li.phone a::before {
+   background-position-x: -26px;
+}
+
+.in-touch-form .form-info .contacts li.mail a::before {
+   background-position-x: -13px;
+}
+
+.in-touch-form .form-info a {
+    text-decoration: none;
+    color: rgb(190, 190, 190);
+    display: block;
+}
+
+footer .copyright {
+    height: 43px;
+    background-color: #222222; 
+}
+footer .copyright span {
+    
+    margin-left: 39px;
+    margin-top: 15px;
+    display: inline-block;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 8.65655pt;
+    color: rgb(69, 69, 69);
+    text-align: justify;
+}
+
+.svg-defs {
+    position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
